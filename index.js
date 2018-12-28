@@ -5,5 +5,10 @@ function takeANumber(currentline,name){
 }
 
 function nowServing(currentline){
-  
+  if(currentline.length===0){
+    return "There is nobody waiting to be served!"
+  }else{
+    var empty = currentline.shift();
+    return `Currently serving ${empty}.`
+  }
 }
