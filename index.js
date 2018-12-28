@@ -22,7 +22,7 @@ function currentLine(currentline){
       if(i === currentline.length-1){
         empty.push(` ${i+1}. ${currentline[i]}`);
       }else{
-        empty += empty + ` ${i+1}. ${currentline[i]},`
+        empty.push(` ${i+1}. ${currentline[i]},`);
       }
     }
     return empty.join("");
