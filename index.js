@@ -19,7 +19,7 @@ function currentLine(currentline){
   }else{
     var empty = "The line is currently:";
     for(var i = 0;i<currentline.length;i++){
-      if(i == currentline.length-1){
+      if(i === currentline.length-1){
         empty += empty + ` ${i+1}. ${currentline[i]}`
       }else{
         empty += empty + ` ${i+1}. ${currentline[i]},`
