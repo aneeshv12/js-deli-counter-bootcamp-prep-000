@@ -25,7 +25,9 @@ function currentLine(currentline){
         empty += empty + ` ${i+1}. ${currentline[i]},`
       }
     }
+    return empty;
   }
+  
 }
 
 
